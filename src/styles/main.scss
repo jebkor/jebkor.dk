@@ -1,6 +1,18 @@
 @import './vendor';
 
 .container {
-  padding-top: 0;
-  padding-bottom: 0;
+  padding: 0;
+}
+
+.row {
+  .row {
+    @media only screen and (max-width: 600px) {
+      margin-left: 12px;
+      margin-right: 12px;
+    }
+  }
+}
+
+.v-application {
+  font-family: "Raleway", sans-serif !important;
 }

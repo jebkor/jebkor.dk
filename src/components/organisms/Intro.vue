@@ -1,8 +1,10 @@
 <template>
-  <v-row class="intro__section">
+<div class="intro__section">
+  <v-row class="intro__section-welcome">
     <v-col
-      md="8"
-      offset-md="2"
+      cols="12"
+      md="6"
+      offset-md="3"
       class="text-center"
     >
       <h1 class="intro__section-headline mt-12 mb-7">
@@ -14,27 +16,36 @@
       </p>
     </v-col>
 
-    <v-col
-      cols="6"
-      class="text-center"
-    >
-      <i>wizard_hat</i>
-    </v-col>
+  </v-row>
 
+  <v-row class="intro__section-random">
     <v-col
       cols="12"
-      md="6"
+      sm="4"
+      align-self="center"
+      order-sm="2"
     >
       <h3>Random facts</h3>
 
       <ul>
         <li>I like to cook</li>
         <li>I drink tea</li>
-        <li>I've run a marathon</li>
         <li>I play Dungeons & Dragons</li>
+        <li>I've run a marathon</li>
       </ul>
     </v-col>
+
+    <v-col
+      cols="12"
+      sm="4"
+      offset-sm="2"
+      class="text-center"
+      order-sm="1"
+    >
+      <img src="../../assets/img/totoro.png" alt="">
+    </v-col>
   </v-row>
+  </div>
 </template>
 
 <script>
@@ -45,12 +56,39 @@
 
 <style lang="scss" scoped>
 .intro__section {
-  background-color: #999999;
-  padding-bottom: 200px;
+  background-color: #f1d1b5;
 
-  img {
-    max-width: 640px;
-    width: 100%;
+  &-welcome {
+    padding: 100px 15px 90px 15px;
+  }
+
+  &-random {
+    padding: 0px 15px 325px 15px;
+
+    img {
+      max-width: 420px;
+      width: 100%;
+    }
+
+    h3 {
+      font-size: 26px;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+
+      li {
+        font-size: 1.1rem;
+
+        &:first-child {
+          margin-top: 5px;
+        }
+        + li {
+          margin-top: 5px;
+        }
+      }
+    }
   }
 }
 </style>

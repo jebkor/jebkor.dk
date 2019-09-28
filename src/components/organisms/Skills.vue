@@ -1,17 +1,17 @@
 <template>
   <v-row
     class="skills__section"
-    no-gutters
   >
     <v-col
-      md="8"
-      offset-md="2"
-      class="mt-12 mb-12"
+      cols="12"
+      sm="8"
+      offset-sm="2"
+      class="mt-12"
     >
       <v-row class="table elevation-4">
         <v-col
           cols="12"
-          md="4"
+          lg="4"
           class="text-center"
         >
           <h2>Designer</h2>
@@ -31,7 +31,7 @@
 
         <v-col
           cols="12"
-          md="4"
+          lg="4"
           class="text-center"
         >
           <h2>Developer</h2>
@@ -56,21 +56,23 @@
 
         <v-col
           cols="12"
-          md="4"
+          lg="4"
           class="text-center"
         >
-          <h2>Some category</h2>
-          <p>Elit non laborum laborum eiusmod elit culpa enim excepteur sint et esse.</p>
+          <h2>Dabbler</h2>
+          <p>Subjects in development I play around with, from time to time.</p>
 
-          <h3>Some subcategory</h3>
-          <p>List of stuff</p>
+          <h3>Languages</h3>
+          <p>CSS, SASS, JavaScript, TypeScript</p>
 
-          <h3>Bullet list</h3>
+          <h3>Technologies</h3>
           <ul>
-            <li>Bullet 1</li>
-            <li>Bullet 2</li>
-            <li>Bullet 3</li>
-            <li>Bullet 4</li>
+            <li>PostgreSQL</li>
+            <li>MongoDB</li>
+            <li>Node.js backend</li>
+            <li>User-Authorization</li>
+            <li>Cookies</li>
+            <li>Sessions</li>
           </ul>
         </v-col>
       </v-row>
@@ -79,9 +81,9 @@
 </template>
 
 <script>
-  export default {
-    name: 'Skills'
-  }
+export default {
+  name: 'Skills'
+}
 </script>
 
 <style lang="scss" scoped>
@@ -89,21 +91,35 @@ $border-radius: 10px;
 $border-color: #dfdfdf;
 
 .skills__section {
-  background-color: #fefefe;
+  background-color: #fff;
+
+  > .col-12 {
+    margin-bottom: -100px;
+  }
 
   .row.table {
     border-radius: $border-radius;
     position: relative;
-    top: -150px;
+    top: -250px;
 
     .col-12 {
-      padding: 30px 50px;
+      padding: 70px 50px;
       border: 1px solid $border-color;
       background-color: #fff;
 
       &:first-child {
         border-top-left-radius: $border-radius;
         border-bottom-left-radius: $border-radius;
+
+        @media only screen and (max-width: 960px) {
+          border-top-right-radius: $border-radius;
+          border-bottom-left-radius: 0;
+
+          border-right: 0;
+
+          border-left: 0;
+          border-bottom: 0;
+        }
       }
 
       &:nth-child(2) {
@@ -114,6 +130,28 @@ $border-color: #dfdfdf;
       &:last-child {
         border-top-right-radius: $border-radius;
         border-bottom-right-radius: $border-radius;
+
+        @media only screen and (max-width: 960px) {
+          border-top-left-radius: 0;
+          border-top-right-radius: 0;
+          border-bottom-left-radius: $border-radius;
+
+          border-top: 0;
+          border-right: 0;
+
+          border-left: 0;
+        }
+      }
+
+      h2 {
+        color: $primary;
+        font-size: 28px;
+      }
+
+      h3 {
+        color: $primary;
+        font-size: 17px;
+        margin-top: 45px;
       }
     }
   }

@@ -5,7 +5,7 @@
       <h2>My Recent Work</h2>
       <p class="mb-12">These projects are just a small selection of things I've had my hands on.</p>
 
-      <v-row no-gutter>
+      <v-row>
         <!-- Spain Holiday -->
         <v-col cols="12" md="4" class="text-center">
           <div>
@@ -104,7 +104,8 @@ export default {
 
 <style lang="scss" scoped>
 .work__section {
-  background-color: #fefefe;
+  background-color: #fff;
+  padding-bottom: 100px;
 
   .col-12 > div {
     position: relative;
