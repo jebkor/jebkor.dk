@@ -21,8 +21,9 @@ export default {
 .hero__section {
   height: 100vh;
   background-color: #f9f9f9;
-  background-image: url('https://unsplash.it/2560/1440?random');
+  background-image: url('../../assets/img/frontpage-image.jpg');
   background-size: cover;
+  background-position: center center;
   position: relative;
 
   &-greetings {
@@ -33,7 +34,7 @@ export default {
     right: 0;
     margin: auto;
     color: #fff;
-    font-size: 26px;
+    font-size: 22px;
   }
 
   &-next {

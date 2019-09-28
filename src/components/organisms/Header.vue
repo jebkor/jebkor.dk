@@ -22,7 +22,7 @@
   .logo {
     color: #fff;
     text-transform: uppercase;
-    font-size: 26px;
+    font-size: 18px;
   }
 }
 </style>
