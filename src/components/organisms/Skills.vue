@@ -81,9 +81,9 @@
 </template>
 
 <script>
-  export default {
-    name: 'Skills'
-  }
+export default {
+  name: 'Skills'
+}
 </script>
 
 <style lang="scss" scoped>
@@ -102,8 +102,6 @@ $border-color: #dfdfdf;
     position: relative;
     top: -250px;
 
-
-
     .col-12 {
       padding: 70px 50px;
       border: 1px solid $border-color;
@@ -116,7 +114,6 @@ $border-color: #dfdfdf;
         @media only screen and (max-width: 960px) {
           border-top-right-radius: $border-radius;
           border-bottom-left-radius: 0;
-
 
           border-right: 0;
 
