@@ -1,5 +1,5 @@
 <template>
-<div class="intro__section">
+<div class="row intro__section">
   <v-row class="intro__section-welcome">
     <v-col
       cols="12"
