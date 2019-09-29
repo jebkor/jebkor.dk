@@ -65,6 +65,10 @@
   &-random {
     padding: 0px 15px 325px 15px;
 
+    @media only screen and (max-width: 600px) {
+      text-align: center;
+    }
+
     img {
       max-width: 420px;
       width: 100%;
