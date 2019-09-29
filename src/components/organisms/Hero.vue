@@ -35,6 +35,10 @@ export default {
     margin: auto;
     color: #fff;
     font-size: 22px;
+
+    @media only screen and (max-width: 600px) {
+      font-size: 13px;
+    }
   }
 
   &-next {

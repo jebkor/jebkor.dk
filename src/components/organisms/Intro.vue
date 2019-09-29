@@ -1,5 +1,5 @@
 <template>
-<div class="intro__section">
+<div class="row intro__section">
   <v-row class="intro__section-welcome">
     <v-col
       cols="12"
@@ -64,6 +64,10 @@
 
   &-random {
     padding: 0px 15px 325px 15px;
+
+    @media only screen and (max-width: 600px) {
+      text-align: center;
+    }
 
     img {
       max-width: 420px;

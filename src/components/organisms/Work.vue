@@ -9,7 +9,7 @@
         <!-- Spain Holiday -->
         <v-col cols="12" md="4" class="text-center">
           <div>
-            <img src="https://unsplash.it/640/450?random" alt="">
+            <img src="assets/img/spain-holiday.jpg" alt="">
 
             <div class="overlay">
               <h2>Spain Holiday</h2>
@@ -23,7 +23,7 @@
         <!-- Insero A/S -->
         <v-col cols="12" md="4" class="text-center">
           <div>
-            <img src="https://unsplash.it/640/450?random" alt="">
+            <img src="assets/img/insero.jpg" alt="">
 
             <div class="overlay">
               <h2>Insero A/S</h2>
@@ -37,7 +37,7 @@
         <!-- Pulsure -->
         <v-col cols="12" md="4" class="text-center">
           <div>
-            <img src="https://unsplash.it/640/450?random" alt="">
+            <img src="assets/img/pulsure.jpg" alt="">
 
             <div class="overlay">
               <h2>Pulsure.dk</h2>
@@ -51,7 +51,7 @@
         <!-- Energi Ikast -->
         <v-col cols="12" md="4" class="text-center">
           <div>
-            <img src="https://unsplash.it/640/450?random" alt="">
+            <img src="assets/img/energi-ikast.jpg" alt="">
 
             <div class="overlay">
               <h2>Energi Ikast</h2>
@@ -65,7 +65,7 @@
         <!-- Miljøservice -->
         <v-col cols="12" md="4" class="text-center">
           <div>
-            <img src="https://unsplash.it/640/450?random" alt="">
+            <img src="assets/img/miljoeservice.jpg" alt="">
 
             <div class="overlay">
               <h2>Miljøservice</h2>
@@ -79,7 +79,7 @@
         <!-- Frimodt P -->
         <v-col cols="12" md="4" class="text-center">
           <div>
-            <img src="https://unsplash.it/640/450?random" alt="">
+            <img src="assets/img/frimodt.jpg" alt="">
 
             <div class="overlay">
               <h2>Frimodt P</h2>
@@ -112,11 +112,14 @@ export default {
     display: block;
     overflow: hidden;
 
-
     &:hover {
       .overlay {
         opacity: 1;
         transition: all .2s ease;
+      }
+
+      img {
+        filter: blur(4px);
       }
     }
   }
@@ -136,7 +139,7 @@ export default {
     right: 0;
     bottom: 0;
     left: 0;
-    background-color: hsla(0, 0%, 0%, .4);
+    background-color: hsla(0, 0%, 0%, .6);
     transition: all .2s ease;
     color: #fff;
     text-align: center;
