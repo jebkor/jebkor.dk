@@ -21,6 +21,10 @@
   position: sticky;
   top: 0;
 
+  @media only screen and (max-width: 600px) {
+    top: 12px; // When scrolling on mobile device, leave a little top padding for the logo to not touch address bar
+  }
+
   .logo {
     color: #fff;
     text-transform: uppercase;
