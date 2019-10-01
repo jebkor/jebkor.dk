@@ -49,9 +49,9 @@
 </template>
 
 <script>
-  export default {
-    name: 'Intro'
-  }
+export default {
+  name: 'Intro'
+}
 </script>
 
 <style lang="scss" scoped>
