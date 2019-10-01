@@ -5,6 +5,7 @@
 
 
 ## Introduction
+This repo is where my portfolio site is hosted through GIT and Netlify is used to deploy and "host" the static website in the end.
 
 
 <br/>
@@ -21,7 +22,7 @@
 
 ## Author
 
-**[PROJECT NAME]** © [jebkor](https://github.com/jebkor), Released under the [MIT](https://opensource.org/licenses/MIT) License.<br>
+**jebkor.dk** © [jebkor](https://github.com/jebkor), Released under the [MIT](https://opensource.org/licenses/MIT) License.<br>
 Authored and maintained by @jebkor.
 
 > [jebkor.dk](https://jebkor.dk) · GitHub [@jebkor](https://github.com/jebkor) · Twitter [@jebkor_](https://twitter.com/jebkor_)
