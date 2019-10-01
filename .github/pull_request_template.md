@@ -1,17 +1,18 @@
 #### Purpose
-What is the context of this pull request? Why is it being done?
+*What is the context of this pull request? Why is it being done?*
 
 #### Changes
-Describe in short the changes that this feature will bring to the project.
+*Describe in short the changes that this feature will bring to the project.*
 
 #### Screenshots (optional)
-Insert screenshot of the feature here, if applicable.
+*Insert screenshot of the feature here, if applicable.*
 
 #### Tests
-Describe for the reviewer, how they can test this feature if applicable.
+*Describe for the reviewer, how they can test this feature if applicable.*
 
 #### Relevant tickets (optional)
-If this feature was spawned from a ticket system, link to it here
+*If this feature was spawned from a ticket system, link to it here*
 
 #### Gif (optional)
-Because, why not?
+*Because, why not?*
+![]()
