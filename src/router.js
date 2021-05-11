@@ -9,7 +9,7 @@ export default new Router({
     {
       path: '/',
       name: 'Frontpage',
-      component: Frontpage
-    }
-  ]
+      component: Frontpage,
+    },
+  ],
 })

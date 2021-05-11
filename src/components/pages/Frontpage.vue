@@ -24,5 +24,5 @@
       Resume
     },
     data: () => ({})
-  };
+  }
 </script>

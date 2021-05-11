@@ -1,25 +1,28 @@
-import Vue from 'vue'
-import App from './App.vue'
-import router from './router'
+
 
 import 'vuetify/dist/vuetify.min.css'
-import vuetify from './plugins/vuetify'
+
 
 // FontAwesome stuff
 import {
-  library
+  library,
 } from '@fortawesome/fontawesome-svg-core'
 import {
-  faEnvelope
+  faEnvelope,
 } from '@fortawesome/free-solid-svg-icons'
 import {
   faGithub,
   faTwitter,
-  faLinkedin
+  faLinkedin,
 } from '@fortawesome/free-brands-svg-icons'
 import {
-  FontAwesomeIcon
+  FontAwesomeIcon,
 } from '@fortawesome/vue-fontawesome'
+
+import Vue from 'vue'
+import App from './App.vue'
+import router from './router'
+import vuetify from './plugins/vuetify'
 
 // scss styles
 import './styles/main.scss'
@@ -31,7 +34,7 @@ library.add(
   faGithub,
   faTwitter,
   faEnvelope,
-  faLinkedin
+  faLinkedin,
 )
 
 // Vue config
@@ -40,5 +43,5 @@ Vue.config.productionTip = false
 new Vue({
   router,
   vuetify,
-  render: h => h(App)
+  render: h => h(App),
 }).$mount('#app')

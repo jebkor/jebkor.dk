@@ -5,11 +5,8 @@
         <li>
           <v-tooltip top>
             <template v-slot:activator="{ on }">
-              <a href="https://twitter.com/jebkor_" target="_blank" v-on="on">
-                <font-awesome-icon
-                  :icon="['fab', 'twitter']"
-                  class="fa-icon"
-                />
+              <a href="https://twitter.com/b1nary1nput" target="_blank" v-on="on">
+                <font-awesome-icon :icon="['fab', 'twitter']" class="fa-icon" />
               </a>
             </template>
             <span>Go to Twitter</span>
@@ -19,11 +16,8 @@
         <li>
           <v-tooltip top>
             <template v-slot:activator="{ on }">
-              <a href="https://github.com/jebkor" target="_blank" v-on="on">
-                <font-awesome-icon
-                  :icon="['fab', 'github']"
-                  class="fa-icon"
-                />
+              <a href="https://github.com/b1nary1nput" target="_blank" v-on="on">
+                <font-awesome-icon :icon="['fab', 'github']" class="fa-icon" />
               </a>
             </template>
             <span>Go to Github</span>
@@ -33,7 +27,11 @@
         <li>
           <v-tooltip top>
             <template v-slot:activator="{ on }">
-               <a href="https://www.linkedin.com/in/jesper-korsbakke/" target="_blank" v-on="on">
+              <a
+                href="https://www.linkedin.com/in/jesper-korsbakke/"
+                target="_blank"
+                v-on="on"
+              >
                 <font-awesome-icon
                   :icon="['fab', 'linkedin']"
                   class="fa-icon"
@@ -47,7 +45,10 @@
         <li>
           <v-tooltip top>
             <template v-slot:activator="{ on }">
-              <a href="mailto:jesper@jebkor.dk?subject=I'm interested in learning more!" v-on="on">
+              <a
+                href="mailto:jesper@jebkor.dk?subject=I'm interested in learning more!"
+                v-on="on"
+              >
                 <font-awesome-icon
                   :icon="['fas', 'envelope']"
                   class="fa-icon"
@@ -59,14 +60,24 @@
         </li>
       </ul>
 
-      <p>Crafted by hand © 2019</p>
+      <p>Crafted by hand © {{ currentYear }}</p>
     </v-col>
   </v-row>
 </template>
 
 <script>
   export default {
+    computed: {
+      currentYear() {
+        const currentDate = new Date();
+        const year = currentDate.getFullYear();
+        return year;
+      }
+    },
 
+    mounted () {
+      console.log('heyo');
+    }
   }
 </script>
 
@@ -86,8 +97,8 @@
       padding: 0 15px;
       font-size: 24px;
       color: #fff;
-      opacity: .4;
-      transition: all .2s ease;
+      opacity: 0.4;
+      transition: all 0.2s ease;
 
       a {
         color: inherit;
@@ -95,7 +106,7 @@
 
       &:hover {
         opacity: 1;
-        transition: all .2s ease;
+        transition: all 0.2s ease;
       }
     }
   }
@@ -103,7 +114,7 @@
   p {
     color: #fff;
     font-size: 12px;
-    opacity: .4;
+    opacity: 0.4;
     margin: 0;
   }
 }
